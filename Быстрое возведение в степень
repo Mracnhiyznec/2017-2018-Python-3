@@ -1,0 +1,8 @@
+def pow(a, n):
+  if n == 0:
+    return 1
+  else:
+    if (n % 2 != 0):
+      return a * pow(a, n - 1)
+    else:
+      return a * pow(a**2, n//2)
