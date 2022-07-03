@@ -5,3 +5,10 @@ N = len(A)
 for i in range(N - 1):
   A[k] = A[k - 1]
 A[N - 1] = tmp
+# # Циклический сдвиг массива вправо
+A = [1, 2, 3, 4, 5]
+N = len(A)
+tmp = A[N - 1]
+for k in range(N-2, -1, -1):
+  A[k + 1] = A[k]
+A[O] = tmp
