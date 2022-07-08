@@ -1,0 +1,7 @@
+# Ханойские башни, рекурсивное решение
+def hanoi (N, start, finish):
+    if N <= 0: return
+    temp = 6 - start - finish
+    hanoi(N - 1, start, temp)
+    print("перенести диск", N, "со стержня", start, "на стержень", finish)
+    hanoi(N - 1, temp, finish)
