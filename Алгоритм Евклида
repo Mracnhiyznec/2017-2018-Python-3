@@ -1,8 +1,9 @@
+# Алгоритм Евклида
 def gcd(a, b):
-  if b == 0:
+  if b == 0: # Если b стало равно 0, то возвращаем a, которое равно искомому НОД.
     return a
   else:
-    return gcd(b, a % b)
+    return gcd(b, a % b) # Возвращаем функцию от (b, a % b), значение которой равно искому НОД.
 # По питоновски
   def gcd(a, b):
     return a if b == 0 else gcd(b, a % b)
