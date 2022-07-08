@@ -1,3 +1,4 @@
+# Сортировка подсчетом (сount sort), 
 N = F[0] * N
 for i in range(N):
   x = int(input())
