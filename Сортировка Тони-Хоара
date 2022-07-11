@@ -1,0 +1,21 @@
+def hoar_sort(A):
+    if len(A) <= 1:
+        return
+    L = []
+    M = []
+    R = []
+    barrier = A[0]
+    for number in A:
+        if (number > barrier):
+            R.append(number)
+        elif(number < barrier):
+            L.append(number)
+        else:
+            M.append(number)
+    hoar_sort(L)
+    hoar_sort(R)
+    i = 0
+    for c in L+M+R:
+        A[i] = c
+        i+=1
+    return A
