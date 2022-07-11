@@ -1,12 +1,12 @@
-def find(number, A):
+def find(number, A): # вспомогательная функция для поиска элемента в листе. Возвращает false если элемент найден, иначе true
     flag = False
     for x in A:
         if number == x:
             flag = True
     return flag
 def permutations(N, M=-1, prefix=None):
-    M = N if M == -1 else M
-    prefix = prefix or []
+    M = N if M == -1 else M # по умолчанию N элементов
+    prefix = prefix or [] возвращает prefix если не пусто, иначе пустой список
     if M == 0:
         print(*prefix)
         return
